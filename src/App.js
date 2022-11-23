@@ -1,8 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import Table from './components/table';
+import PopulationsTable from './components/PopulationsTable';
 
 const App = () =>
-	<div className="App" role="App">{Table()}</div>;
+	<div className="App" role="App">
+		<PopulationsTable/>
+	</div>;
 
 export default App;

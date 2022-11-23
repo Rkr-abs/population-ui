@@ -53,21 +53,31 @@ const populations = [
 	},
 ];
 
-const Table = () => <table>
+const PopulationRow = ({
+	state,
+	estimate2011: estimateFirst,
+	estimate2022: estimateSecond,
+}, key) =>
+	<tr key={ key } className="table">
+		<td> {state}</td>
+		<td>{estimateFirst}</td>
+		<td>{estimateSecond}</td>
+	</tr>;
+
+const Header = () =>
 	<thead className="table">
 		<tr>
 			<th>state</th>
 			<th>estimate2011</th>
 			<th>estimate2022</th>
-		</tr></thead>
+		</tr>
+	</thead>;
+
+const PopulationsTable = () => <table>
+	<Header/>
 	<tbody>
-		{populations.map((item, key) =>
-			<tr key={ key }>
-				<td> {item.state}</td>
-				<td>{item.estimate2011}</td>
-				<td>{item.estimate2022}</td>
-			</tr>)}
+		{populations.map(PopulationRow)}
 	</tbody>
 </table>;
 
-export default Table;
+export default PopulationsTable;
