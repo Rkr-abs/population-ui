@@ -1,7 +1,7 @@
 import { React } from 'react';
 import getSummary from '../../services/getSummary';
 
-const SummarizedData = ({ populations }) => {
+const SummarizedTable = ({ populations }) => {
 	const summary = getSummary({ populations });
 
 	return <tbody>
@@ -22,4 +22,4 @@ const SummarizedData = ({ populations }) => {
 	</tbody>;
 };
 
-export default SummarizedData;
+export default SummarizedTable;
