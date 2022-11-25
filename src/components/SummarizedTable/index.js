@@ -1,6 +1,6 @@
 import { React } from 'react';
-import SummarizedData from './SummarizedData';
-import Title from './Title';
+import SummarizedData from './SummaryTable';
+import Title from './TableHead';
 const PopulationsSummary = (context) =>
 	<div>
 		<h1>Summary</h1>

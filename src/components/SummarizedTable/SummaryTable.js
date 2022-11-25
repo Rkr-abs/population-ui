@@ -1,8 +1,8 @@
 import { React } from 'react';
-import getSummarized from '../../services/getSummarize';
+import getSummary from '../../services/getSummary';
 
-const SummarizedData = ({ data: populations }) => {
-	const summary = getSummarized({ data: populations });
+const SummarizedData = ({ populations }) => {
+	const summary = getSummary({ populations });
 
 	return <tbody>
 		<tr>
@@ -11,14 +11,13 @@ const SummarizedData = ({ data: populations }) => {
 			<td>{summary.maximum}</td>
 		</tr>
 		<tr>
-			<td>minimum</td>
+			<td>Minimum</td>
 			<td>{summary.minState}</td>
 			<td>{summary.minimum}</td>
 		</tr>
 		<tr>
 			<td>Total</td>
-			<td>-</td>
-			<td>{summary.total}</td>
+			<td>-</td><td>{summary.total}</td>
 		</tr>
 	</tbody>;
 };

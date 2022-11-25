@@ -28,17 +28,17 @@ const getMinimum = (populations) => {
 	return minimumPopulation;
 };
 
-const Total = (populations) => reduce(
+const getTotal = (populations) => reduce(
 	populations, (acc, cur) => acc + cur.estimate2011, 0
 );
 
-const getSummarized = ({ data: populations }) => ({
-	maxState: getMaximum(populations).state,
-	maximum: getMaximum(populations).estimate2011,
-	total: Total(populations),
+const getSummary = ({ populations }) => ({
+	total: getTotal(populations),
 	minState: getMinimum(populations).state,
 	minimum: getMinimum(populations).estimate2011,
+	maxState: getMaximum(populations).state,
+	maximum: getMaximum(populations).estimate2011,
 
 });
 
-export default getSummarized;
+export default getSummary;

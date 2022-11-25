@@ -1,5 +1,5 @@
 import { React } from 'react';
-import Title from './Title';
+import Title from './TableHead';
 import PopulationData from './PopulationData';
 
 const PopulationsTable = ({ data: populations, config }) =>

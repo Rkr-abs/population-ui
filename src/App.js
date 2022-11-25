@@ -8,8 +8,7 @@ import PopulationsSummary from './components/SummarizedTable';
 const App = () =>
 	<div className="App" role="App">
 		<PopulationsTable { ...{ data: populations, config: config } }/>
-		<PopulationsSummary { ...{ data: populations } }/>
-
+		<PopulationsSummary { ...{ populations } }/>
 	</div>;
 
 export default App;

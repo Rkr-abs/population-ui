@@ -23,12 +23,13 @@ code {
 
 table {
 	width: 600px;
-	height: 30vmax;
+	height: 30vmin;
 	border-collapse: collapse;
 	border: 1px solid #101820FF;
 }
 
 th {
+	border: 1px solid #101820FF;
 	background-color: #FBEAEB;
 	color: #2F3C7E;
 	text-transform: uppercase;
@@ -38,7 +39,9 @@ th {
 	font-family: 'Poppins', sans-serif;
 }
 
+
 td {
+	border: 1px solid #101820FF;
 	background-color: #FCF6F5FF;
 	color: #00539CFF;
 	font-weight: 400;
